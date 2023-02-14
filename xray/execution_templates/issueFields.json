@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "project": {
+            "id": "add Jira project id here"
+        },
+        "summary": "_module_ execution, version _version_",
+        "description": "TBD",
+        "issuetype": {
+            "id": "10039"
+        },
+        "components" : [
+            {
+            "name":"_module_"
+            }
+        ],
+    },
+    "xrayFields": {
+        "testPlanKey": "_testplanid_",
+        "environments": []
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "project": {
+            "id": "10033"
+        },
+        "summary": "Sprint 1 execution, version x.x",
+        "description": "TBD",
+        "issuetype": {
+            "id": "10039"
+        },
+        "components" : [
+            {
+            "name":""
+            }
+        ]
+    },
+    "xrayFields": {
+        "testPlanKey": "TD-17",
+        "environments": []
+    }
+}

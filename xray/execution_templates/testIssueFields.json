@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "project": {
+            "id": "add Jira project id here"
+        },
+        "description": "TBD",
+        "components" : [
+            {
+            "name":"_module_"
+            }
+        ],
+        "labels" : ["Server","JUnit"]
+    }
+}

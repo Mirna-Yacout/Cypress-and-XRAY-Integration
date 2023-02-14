@@ -1,0 +1,27 @@
+{
+  "name": "Cypress and XRAY Integration"
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^10.8.0",
+    "cypress-mochawesome-reporter": "../../",
+    "cypress-multi-reporters": "^1.6.1",
+    "junit-report-merger": "^4.0.0",
+    "mocha": "^10.1.0",
+    "mocha-junit-reporter": "^2.1.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "scripts": {
+    "test_login": "./node_modules/cypress/bin/cypress run -s cypress/e2e/login/*_spec.cy.js --reporter junit --reporter-options mochaFile=results/login/test_login_results-[hash].xml",
+    "test_all_tests": "./node_modules/cypress/bin/cypress run -s cypress/e2e/*/*_spec.cy.js --reporter junit --reporter-options mochaFile=results/all_tests/test_all_tests_results-[hash].xml",
+    
+    "merge-reports": "jrm ./xray/combined.xml \"results/*.xml\"",
+    "merge-reports_login": "jrm ./results/test_login_results.xml ./results/login/*.xml",
+    "merge-reports_all_tests": "jrm ./results/test_all_tests_results.xml ./results/all_tests/*.xml"
+  },
+  "author": "Mirna Yacout",
+  "license": "ISC"
+}

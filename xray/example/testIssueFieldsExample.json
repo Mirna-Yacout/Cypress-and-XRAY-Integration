@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "project": {
+            "id": "10001"
+        },
+        "description": "TBD",
+        "components" : [
+            {
+            "name":""
+            }
+        ],
+        "labels" : ["Server","JUnit"]
+    }
+}

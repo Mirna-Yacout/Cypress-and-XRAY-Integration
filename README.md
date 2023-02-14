@@ -1,5 +1,5 @@
 
-# Functional Testing
+# Cypress and XRAY Integration
 
 This project is implemented using Cypress 10 and mocha reporters to implement, execute and report test scenarios for  a frontend interface. The mocha reporters produce 3 types of results added to the execution status that is found in the terminal. Mocha produces the following results after execution:
 
